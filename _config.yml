@@ -53,12 +53,20 @@ collections:
   pages:
     output: true
     permalink: /:collection/:path/
+  work:
+    output: true
+    permalink: /work/:path/
+  study:
+    output: true
+    permalink: /study/:path/
   others:
     output: true
     permalink: /:collection/:path/
 
 ordered_collections:
   - pages
+  - work
+  - study
   - posts
   - others
 
