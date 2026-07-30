@@ -6,7 +6,7 @@
 
         {% assign reversed_posts = site.posts | reverse %}
 
-        {% if reversed_posts %}
+        {% if reversed_posts.size > 0 %}
             <link rel="next" href="{{site.baseurl}}{{reversed_posts.first.url}}" />
         {% endif %}
     </head>
@@ -35,7 +35,7 @@
                         <i class="fa"></i>
                     </a>
 
-                    {% if reversed_posts %}
+                    {% if reversed_posts.size > 0 %}
                         <a href="{{site.baseurl}}{{reversed_posts.first.url}}" class="navigation navigation-next navigation-unique" aria-label="Next page: {{reversed_posts.first.title}}">
                             <i class="fa fa-angle-right"></i>
                         </a>

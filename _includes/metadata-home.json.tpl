@@ -5,7 +5,7 @@
         "depth": 1,
         {% assign reversed_posts = site.posts | reverse %}
 
-        {% if reversed_posts %}
+        {% if reversed_posts.size > 0 %}
         "next": {
             "title": "{{reversed_posts.first.title}}",
             "level": "1.2",
