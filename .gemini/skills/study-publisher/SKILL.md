@@ -1,6 +1,6 @@
 ---
 name: study-publisher
-description: Publish a local Markdown draft and its images into the papers, engineering, or series collection of this Jekyll blog.
+description: Publish a local Markdown draft and its images into the papers, engineering, or labs collection of this Jekyll blog.
 ---
 
 # Study Publisher
@@ -11,7 +11,7 @@ description: Publish a local Markdown draft and its images into the papers, engi
 
 - `_pages/papers/`: 논문 리뷰
 - `_pages/engineering/`: 구현과 문제 해결 기록
-- `_pages/series/<series-slug>/`: 연속 학습 콘텐츠
+- `_pages/labs/<series-slug>/`: 구현·실습 및 연속 학습 콘텐츠
 
 ## Usage
 
@@ -26,7 +26,7 @@ python .gemini/skills/study-publisher/scripts/publish_study.py \
 ```bash
 python .gemini/skills/study-publisher/scripts/publish_study.py \
   --source /path/to/draft.md \
-  --collection series \
+  --collection labs \
   --series qwen-image-training
 ```
 

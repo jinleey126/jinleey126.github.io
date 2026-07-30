@@ -18,7 +18,7 @@ _pages/
 ├── engineering/
 │   ├── index.md
 │   └── YYYY-MM-DD-post-slug.md
-└── series/
+└── labs/
     ├── index.md
     └── series-slug/
         ├── index.md
@@ -28,7 +28,7 @@ _pages/
 - `research`: 직접 정의한 문제, 가설, 실험 및 결과
 - `papers`: 논문의 핵심 방법, 실험, 한계와 실무 적용 가능성
 - `engineering`: 구현, 운영, 배포와 문제 해결 과정
-- `series`: 하나의 기술을 여러 편으로 나누어 학습한 기록
+- `labs`: 기술을 직접 구현하거나 실습한 과정과 결과
 
 새 카테고리를 만들 때는 해당 디렉터리에 `index.md`를 반드시 추가합니다.
 
@@ -128,7 +128,7 @@ paper_url: "https://arxiv.org/abs/..."
 ## 주의사항
 ```
 
-### Series
+### Hands-on Labs
 
 각 글이 하나의 질문에 답하도록 작성하고, 글 상단에 전체 순서와 현재 위치를 표시합니다.
 

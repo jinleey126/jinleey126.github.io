@@ -2,7 +2,7 @@
 title: "학습 주제와 핵심 질문"
 description: "학습 범위와 결론을 설명하는 한 문장"
 date: YYYY-MM-DD
-category: series
+category: labs
 subcategory: specific-field
 series: series-slug
 series_order: 1

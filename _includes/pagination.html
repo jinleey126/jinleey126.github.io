@@ -8,6 +8,11 @@
         {{ category_title }}
     {% endif %}
 </h1>
+{% if page.content != "" %}
+    <div class="category-description">
+        {{ page.content }}
+    </div>
+{% endif %}
 <div id="category-list">
     <ul class="paginated-list" data-current-page="1" aria-live="polite">
     {%- for sub_page in list_pages -%}

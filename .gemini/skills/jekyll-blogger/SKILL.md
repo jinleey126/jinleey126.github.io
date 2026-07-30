@@ -12,7 +12,7 @@ description: Create and maintain posts for this AI engineering Jekyll blog using
 - 직접 수행한 실험 → `_pages/research/`
 - 논문 분석 → `_pages/papers/`
 - 구현·운영·문제 해결 → `_pages/engineering/`
-- 단계별 학습 연재 → `_pages/series/<series-slug>/`
+- 구현·실습 및 단계별 연재 → `_pages/labs/<series-slug>/`
 - 공지 또는 일반 글 → `_posts/`
 
 ## Required checks

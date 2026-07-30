@@ -6,7 +6,6 @@
 
 - `papers`
 - `engineering`
-- `series` (`--series` 필요)
+- `labs` (`--series` 필요)
 
 상세 작성 규칙과 검수 절차는 저장소 루트의 `guideline.md`를 확인합니다.
-

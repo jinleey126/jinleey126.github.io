@@ -37,12 +37,12 @@ def main():
         "--collection",
         "-c",
         required=True,
-        choices=["papers", "engineering", "series"],
+        choices=["papers", "engineering", "labs"],
         help="Destination Jekyll collection.",
     )
     parser.add_argument(
         "--series",
-        help="Series slug. Required when --collection series is selected.",
+        help="Series slug. Required when --collection labs is selected.",
     )
     
     args = parser.parse_args()
@@ -64,12 +64,12 @@ def main():
     post_date, slug = extract_date_and_slug(os.path.basename(source_path))
     post_filename = f"{post_date}-{slug}.md"
     
-    if args.collection == "series" and not args.series:
-        print("Error: --series is required when publishing to the series collection.")
+    if args.collection == "labs" and not args.series:
+        print("Error: --series is required when publishing to the labs collection.")
         sys.exit(1)
 
-    if args.collection == "series":
-        dest_dir = os.path.join(BLOG_DIR, "_pages", "series", sanitize_slug(args.series))
+    if args.collection == "labs":
+        dest_dir = os.path.join(BLOG_DIR, "_pages", "labs", sanitize_slug(args.series))
     else:
         dest_dir = os.path.join(BLOG_DIR, "_pages", args.collection)
     os.makedirs(dest_dir, exist_ok=True)
