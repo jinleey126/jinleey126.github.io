@@ -1,71 +1,35 @@
 ---
-title: Profile
+title: About
+description: AI R&D Engineer 이유진의 관심 분야와 기술 블로그 운영 방향
 layout: post
 icon: fa-user
 order: 1
 ---
 
-# 이유진 (Youjin Lee)
-> **문제를 정의하고 기술로 해결책을 찾아가는 과정에서 즐거움을 느끼는 개발자입니다.**
-> 
-> 데이터 기반의 사고를 바탕으로 효율적인 시스템을 설계하고, 복잡한 기술적 문제를 명확하게 문서화하여 팀과 공유하는 것을 좋아합니다. 현재는 LLM과 검색 시스템(RAG)을 통한 정보 추출 및 자동화에 깊은 관심을 가지고 공부하고 있습니다.
+# 이유진 · AI R&D Engineer
 
----
+연구 아이디어를 실험으로 검증하고, 이를 실제로 운영 가능한 AI 시스템으로 구현하는 엔지니어입니다. LLM 최적화, RAG, NLP, AI 백엔드와 추론 시스템에 관심을 두고 있습니다.
 
-## 📬 Contact
-*   **Email:** [이메일 주소를 입력하세요]
-*   **GitHub:** [github.com/jinleey126](https://github.com/jinleey126)
-*   **LinkedIn:** [링크드인 주소가 있다면 입력하세요]
+## 관심 분야
 
----
+- LLM Fine-tuning 및 PEFT
+- RAG와 Document Intelligence
+- Tokenizer 및 한국어 NLP
+- Table Understanding
+- AI Agent와 비동기 LLM 애플리케이션
+- Production AI Serving 및 성능 최적화
 
-## 🛠 Skills
-### Languages & Frameworks
-*   **Expert:** Python, PyTorch
-*   **Proficient:** JavaScript, SQL
-*   **Familiar:** C++, Go
+## 이 블로그에서 다루는 내용
 
-### Knowledge & Tools
-*   **Domain:** Natural Language Processing (NLP), LLM Fine-tuning, RAG
-*   **DevOps:** Docker, Git, Linux (Ubuntu)
-*   **Database:** PostgreSQL, MongoDB, Pinecone (Vector DB)
+- 직접 수행한 연구와 실험 결과
+- 최신 AI 논문의 구조와 적용 가능성
+- 개발 과정에서 발견한 문제와 해결 방법
+- 장기 학습 프로젝트와 기술 연재
 
----
+프로젝트 성과와 상세 경력은 별도 포트폴리오에서 관리하며, 이 블로그에는 재사용할 수 있는 기술적 지식과 공개 가능한 실험 기록을 중심으로 작성합니다.
 
-## 💼 Work Experience
-### [현재 혹은 이전 직장명]
-*포지션 | YYYY.MM – 현재*
+## Links
 
-*   **[주요 프로젝트 1]**
-    *   설명: 어떤 문제를 해결하기 위한 프로젝트였는지 간략히 기술
-    *   성과: 구체적인 수치나 결과 (예: 처리 속도 30% 개선, 정확도 5% 향상)
-    *   기술: Python, LLM, Docker
-*   **[주요 프로젝트 2]**
-    *   설명: ...
-    *   성과: ...
-
----
-
-## 🚀 Projects
-### [개인 프로젝트 혹은 오픈소스 기여]
-*YYYY.MM – YYYY.MM*
-
-*   **[프로젝트 명]**
-    *   어떤 동기로 시작했는지, 어떤 문제를 해결했는지 기술
-    *   [Link to Repo or Demo]
-
----
-
-## 🎓 Education
-*   **[대학교/기관명]** - [전공] 졸업 (YYYY.MM)
-
----
-
-## 📝 Featured Posts
-*가장 자신 있는 기술 분석 및 업무 기록 글입니다.*
-
-1.  [TAPAS: Weakly Supervised Table Parsing via Pre-training](/2025/03/19/TAPAS.html)
-2.  [Efficient and Effective Vocabulary Expansion (EEVE)](/2025/03/01/new.html)
-
----
-*Last Updated: 2026-06-06*
+- [GitHub](https://github.com/jinleey126)
+- [Technical Blog](https://jinleey126.github.io)
+- Email: `jinleey126@gmail.com`

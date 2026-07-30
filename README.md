@@ -1,22 +1,33 @@
 ---
 layout: home
-title: Welcome to My Archive
+title: Youjin's AI Engineering Notes
 permalink: /
 ---
 
-# 안녕하세요, 이유진입니다. 👋
+# 연구와 구현 사이에서 배운 것을 기록합니다
 
-기술을 통해 실무의 문제를 해결하고, 그 과정을 기록하며 성장하는 과정을 담는 공간입니다.
-현재는 **LLM, NLP, RAG 시스템**에 관심을 가지고 깊이 있게 탐구하고 있습니다.
+LLM 학습과 최적화, RAG 시스템, NLP 연구, Production AI Engineering 과정에서 직접 실험하고 검증한 내용을 정리하는 기술 블로그입니다.
 
----
+## 주요 분야
 
-## 📌 Shortcut
-*   [**Profile / Resume**](/pages/about.html): 저의 기술 스택과 경력을 확인하실 수 있습니다.
-*   [**Work Records**](#): 업무 중 고민했던 문제 해결의 흔적들입니다. (준비 중)
-*   [**Study Notes**](#): 기술적 깊이를 더하기 위해 정리한 학습 노트입니다.
+- **Research** — 직접 수행한 실험, 방법론, 결과와 한계
+- **Paper Reviews** — 최신 AI 논문의 핵심 구조와 실무 적용 가능성
+- **Engineering** — 구현, 배포, 테스트 및 성능 최적화 기록
+- **Learning Series** — 하나의 기술을 순서대로 탐구하는 연재
 
----
+## Featured Research
 
-## 🚀 Recent Posts
-최신 블로그 포스트와 기술 분석 글을 아래에서 확인해 보세요.
+- [LoRA vs MoRA 기반 PEFT 및 Lazy Loading 최적화]({{ site.baseurl }}/research/2024-11-15-peft-lora-mora-comparison/)
+- [도메인 특화 커스텀 토크나이저]({{ site.baseurl }}/research/2025-03-15-custom-tokenizer-optimization/)
+- [Table Understanding QA Benchmark]({{ site.baseurl }}/research/2024-04-15-table-understanding-qa-benchmark/)
+
+## 바로가기
+
+- [About]({{ site.baseurl }}/pages/about/)
+- [Research]({{ site.baseurl }}/pages/research/)
+- [Paper Reviews]({{ site.baseurl }}/pages/papers/)
+- [Engineering]({{ site.baseurl }}/pages/engineering/)
+- [Learning Series]({{ site.baseurl }}/pages/series/)
+- [Archive]({{ site.baseurl }}/pages/archive/)
+
+새 글을 작성하기 전에는 저장소의 [`guideline.md`](https://github.com/jinleey126/jinleey126.github.io/blob/master/guideline.md)를 확인합니다.

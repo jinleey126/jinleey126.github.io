@@ -1,20 +1,20 @@
-# Configurations
-title:            Jekyll Gitbook
-longtitle:        Jekyll Gitbook
-author:           HE Tao
-email:            sighingnow@gmail.com
+# Site identity
+title:            Youjin's AI Engineering Notes
+longtitle:        Youjin's AI Engineering Notes
+author:           이유진
+email:            jinleey126@gmail.com
 description: >
-  Build Jekyll site with the GitBook style.
+  LLM 학습과 최적화, RAG, NLP 연구, Production AI Engineering 과정에서
+  얻은 지식과 실험 결과를 기록합니다.
+lang:             ko-KR
+github_username:  jinleey126
 
 version:          1.0
 gitbook_version:  3.2.3
 
 url:              'https://jinleey126.github.io'
-baseurl:          '/'
+baseurl:          ''
 rss:              RSS
-
-# bootstrap: use the remote theme for the site itself
-remote_theme: sighingnow/jekyll-gitbook
 
 toc:
   enabled: true
@@ -22,7 +22,7 @@ toc:
   h_max:   3
 
 # customize the link favicon in header, will be {{site.baseurl}}/{{site.favicon_path}}
-favicon_path:     /assets/gitbook/images/favicon.ico
+favicon_path:     assets/gitbook/images/favicon.ico
 
 # markdown render engine.
 markdown:         kramdown
@@ -53,24 +53,63 @@ collections:
   pages:
     output: true
     permalink: /:collection/:path/
-  work:
+  research:
     output: true
-    permalink: /work/:path/
-  study:
+    permalink: /research/:path/
+  papers:
     output: true
-    permalink: /study/:path/
-  others:
+    permalink: /papers/:path/
+  engineering:
     output: true
-    permalink: /:collection/:path/
+    permalink: /engineering/:path/
+  series:
+    output: true
+    permalink: /series/:path/
 
 ordered_collections:
   - pages
-  - work
-  - study
+  - research
+  - papers
+  - engineering
+  - series
   - posts
-  - others
+
+defaults:
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: post
+      author: 이유진
+  - scope:
+      path: ""
+      type: papers
+    values:
+      layout: post
+      author: 이유진
+  - scope:
+      path: ""
+      type: engineering
+    values:
+      layout: post
+      author: 이유진
+  - scope:
+      path: ""
+      type: series
+    values:
+      layout: post
+      author: 이유진
 
 page_width: 800px
+
+gitbook_search:
+  exclude:
+    files: []
+    tags: []
+    categories: []
+  include:
+    pages: true
+    collections: []
 
 destination:      ./_site
 incremental:      false

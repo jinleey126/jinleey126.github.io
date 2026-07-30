@@ -1,3 +1,9 @@
 _site/
 _draft/
 .jekyll-cache/
+.bundle/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
