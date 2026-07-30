@@ -5,20 +5,17 @@ $baseurl: "{{ site.baseurl }}";
 html, body {
   margin:0;
   padding:0;
-}
-
-.fonts-loaded {
-  a, span, p { font-family:"Nunito Sans", 'Lucida Sans', sans-serif; }
-  h1, h2, h3 { font-family:"Lato", Helvetica, sans-serif; }
-  mark { font-family:'Righteous', sans-serif; }
+  font-family:-apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    "Pretendard", "Noto Sans KR", "Segoe UI", sans-serif;
 }
 
 a { text-decoration:none; }
 a, span, p, h1, h2, h3, i { color:#3A241A; }
-a, span, p { font-family:'Lucida Sans', sans-serif; }
+a, span, p, h1, h2, h3, mark, button, input {
+  font-family:inherit;
+}
 h1, h2, h3, mark {
   margin:0;
-  font-family:Helvetica, sans-serif;
 }
 mark { background-color:transparent; }
 
