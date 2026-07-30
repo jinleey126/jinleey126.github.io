@@ -1,20 +1,19 @@
 ---
 title: "Paper Title"
 description: "논문의 문제, 핵심 방법과 분석 범위를 설명하는 한 문장"
-date: YYYY-MM-DD
-category: papers
-subcategory: specific-field
+date: YYYY-MM-DD 09:00:00 +0900
+categories:
+  - Paper Reviews
+  - specific-field
 paper_authors:
   - Original Author
 paper_url: "https://arxiv.org/abs/..."
 tags:
   - Paper Review
   - LLM
-layout: page
+toc: true
 mermaid: false
 ---
-
-# Paper Title
 
 ## 3줄 요약
 

@@ -1,16 +1,15 @@
 ---
 title: "구체적인 글 제목"
 description: "문제와 핵심 내용을 설명하는 한 문장"
-date: YYYY-MM-DD
-category: engineering
-subcategory: specific-field
+date: YYYY-MM-DD 09:00:00 +0900
+categories:
+  - Engineering Notes
+  - specific-field
 tags:
   - LLM
-layout: page
+toc: true
 mermaid: false
 ---
-
-# 제목
 
 ## 상황
 ## 문제

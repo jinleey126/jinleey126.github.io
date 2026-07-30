@@ -9,10 +9,9 @@ description: Create and maintain posts for this AI engineering Jekyll blog using
 
 ## Collection routing
 
-- 직접 수행한 실험 → `_pages/research/`
-- 논문 분석 → `_pages/papers/`
-- 구현·운영·문제 해결 → `_pages/engineering/`
-- 구현·실습 및 단계별 연재 → `_pages/labs/<series-slug>/`
+- 논문 분석 → `_posts/`, category `Paper Reviews`
+- 구현·운영·문제 해결 → `_posts/`, category `Engineering Notes`
+- 구현·실습 및 단계별 연재 → `_posts/`, category `Hands-on Labs`
 - 공지 또는 일반 글 → `_posts/`
 
 ## Required checks

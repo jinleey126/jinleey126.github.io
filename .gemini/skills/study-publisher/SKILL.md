@@ -9,9 +9,8 @@ description: Publish a local Markdown draft and its images into the papers, engi
 
 ## Collections
 
-- `_pages/papers/`: 논문 리뷰
-- `_pages/engineering/`: 구현과 문제 해결 기록
-- `_pages/labs/<series-slug>/`: 구현·실습 및 연속 학습 콘텐츠
+- `_posts/`: 모든 글
+- Front Matter의 `categories`: Paper Reviews, Engineering Notes, Hands-on Labs
 
 ## Usage
 

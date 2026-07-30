@@ -1,16 +1,15 @@
 ---
 title: "구체적인 기술 제목"
 description: "글에서 다루는 문제와 독자가 얻을 수 있는 내용을 설명합니다."
-date: YYYY-MM-DD
-category: engineering
-subcategory: specific-field
+date: YYYY-MM-DD 09:00:00 +0900
+categories:
+  - Engineering Notes
+  - specific-field
 tags:
   - LLM
-layout: page
+toc: true
 mermaid: false
 ---
-
-# 제목
 
 ## 요약
 

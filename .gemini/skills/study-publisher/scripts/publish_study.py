@@ -68,10 +68,7 @@ def main():
         print("Error: --series is required when publishing to the labs collection.")
         sys.exit(1)
 
-    if args.collection == "labs":
-        dest_dir = os.path.join(BLOG_DIR, "_pages", "labs", sanitize_slug(args.series))
-    else:
-        dest_dir = os.path.join(BLOG_DIR, "_pages", args.collection)
+    dest_dir = os.path.join(BLOG_DIR, "_posts")
     os.makedirs(dest_dir, exist_ok=True)
     dest_path = os.path.join(dest_dir, post_filename)
     
