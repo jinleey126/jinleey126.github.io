@@ -9,9 +9,9 @@ description: Publish a local Markdown draft and its images into the papers, engi
 
 ## Collections
 
-- `_papers/`: 논문 리뷰
-- `_engineering/`: 구현과 문제 해결 기록
-- `_series/<series-slug>/`: 연속 학습 콘텐츠
+- `_pages/papers/`: 논문 리뷰
+- `_pages/engineering/`: 구현과 문제 해결 기록
+- `_pages/series/<series-slug>/`: 연속 학습 콘텐츠
 
 ## Usage
 
@@ -30,5 +30,4 @@ python .gemini/skills/study-publisher/scripts/publish_study.py \
   --series qwen-image-training
 ```
 
-스크립트는 로컬 이미지를 `assets/images/<collection>/<post-slug>/`로 복사하고 링크를 Jekyll 경로로 변경합니다. 자동 발행 후에도 `guideline.md`의 공개 전 체크리스트에 따라 사람이 직접 검수해야 합니다.
-
+스크립트는 로컬 이미지를 `assets/img/<collection>/<post-slug>/`로 복사하고 링크를 Jekyll 경로로 변경합니다. 자동 발행 후에도 `guideline.md`의 공개 전 체크리스트에 따라 사람이 직접 검수해야 합니다.

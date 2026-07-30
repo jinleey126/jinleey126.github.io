@@ -5,7 +5,7 @@ description: Fetch recent LLM papers from arXiv, generate Korean review drafts w
 
 # Auto Paper Reviewer
 
-arXiv에서 최신 LLM 논문을 수집하고 Gemini로 리뷰 초안을 생성하여 `_papers/`에 저장합니다.
+arXiv에서 최신 LLM 논문을 수집하고 Gemini로 리뷰 초안을 생성하여 `_pages/papers/`에 저장합니다.
 
 ## Run
 
@@ -22,4 +22,3 @@ GitHub Actions에서 실행하려면 Repository Secrets에 `GEMINI_API_KEY`가 �
 - 논문의 주장과 리뷰어 해석의 구분
 - 이미지 출처와 라이선스
 - placeholder와 추측성 설명
-

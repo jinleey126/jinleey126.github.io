@@ -8,7 +8,7 @@ series: series-slug
 series_order: 1
 tags:
   - LLM
-layout: post
+layout: page
 mermaid: false
 ---
 

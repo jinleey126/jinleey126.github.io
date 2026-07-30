@@ -10,7 +10,7 @@ paper_url: "https://arxiv.org/abs/..."
 tags:
   - Paper Review
   - LLM
-layout: post
+layout: page
 mermaid: false
 ---
 

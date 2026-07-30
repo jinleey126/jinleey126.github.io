@@ -1,121 +1,54 @@
-# Site identity
-title:            Youjin's AI Engineering Notes
-longtitle:        Youjin's AI Engineering Notes
-author:           이유진
-email:            jinleey126@gmail.com
-description: >
-  LLM 학습과 최적화, RAG, NLP 연구, Production AI Engineering 과정에서
-  얻은 지식과 실험 결과를 기록합니다.
-lang:             ko-KR
-github_username:  jinleey126
+title: Youjin's AI Engineering Notes
+description: "AI 연구, 논문 리뷰와 개발 경험을 기록하는 이유진의 기술 블로그"
+logo_img: "/assets/img/favicon.webp"
+profile_img: "/assets/img/profile.webp"
+url: "https://jinleey126.github.io"
+lang: ko-KR
 
-version:          1.0
-gitbook_version:  3.2.3
+# Social Links
+email: jinleey126@gmail.com
+github_username: jinleey126
 
-url:              'https://jinleey126.github.io'
-baseurl:          ''
-rss:              RSS
+# External API
+# giscus_repo:
+# giscus_repoId:
+# giscus_category:
+# giscus_categoryId:
+# goatcounter_code:
+# google_analytics:
 
-toc:
-  enabled: true
-  h_min:   1
-  h_max:   3
+# If your repo name follows the format "<user-name>.github.io", then leave the below blank.
+# Otherwise, set its value as "/<repo-name>". ex) baseurl: /myblog
+baseurl: ""
 
-# customize the link favicon in header, will be {{site.baseurl}}/{{site.favicon_path}}
-favicon_path:     assets/gitbook/images/favicon.ico
-
-# markdown render engine.
-markdown:         kramdown
-kramdown:
-  auto_ids:               true
-  input:                  GFM
-  math_engine:            mathjax
-  smart_quotes:           lsquo,rsquo,ldquo,rdquo
-  toc_levels:             1..6
-  syntax_highlighter:     rouge
-  syntax_highlighter_opts:
-    guess_lang:           true
-
-syntax_highlighter_style: colorful
-
-markdown_ext:             markdown,mkdown,mkdn,mkd,md
-
-# Permalinks
-permalink:                /:categories/:year-:month-:day-:title:output_ext
-
-# Disqus comments
-# disqushandler:            sighingnow
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-loading-lazy
 
 exclude:
-  - _drafts
+  - docs/
+  - guideline.md
+  - README.md
+  - vendor/
 
 collections:
   pages:
     output: true
-    permalink: /:collection/:path/
-  research:
-    output: true
-    permalink: /research/:path/
-  papers:
-    output: true
-    permalink: /papers/:path/
-  engineering:
-    output: true
-    permalink: /engineering/:path/
-  series:
-    output: true
-    permalink: /series/:path/
-
-ordered_collections:
-  - pages
-  - research
-  - papers
-  - engineering
-  - series
-  - posts
+    permalink: /:path.html
 
 defaults:
-  - scope:
+  -
+    scope:
       path: ""
-      type: research
+      type: "pages"
     values:
-      layout: post
-      author: 이유진
-  - scope:
-      path: ""
-      type: papers
-    values:
-      layout: post
-      author: 이유진
-  - scope:
-      path: ""
-      type: engineering
-    values:
-      layout: post
-      author: 이유진
-  - scope:
-      path: ""
-      type: series
-    values:
-      layout: post
-      author: 이유진
+      layout: "page"
+      date: "1900-01-01"
 
-page_width: 800px
-
-gitbook_search:
-  exclude:
-    files: []
-    tags: []
-    categories: []
-  include:
-    pages: true
-    collections: []
-
-destination:      ./_site
-incremental:      false
-regenerate:       true
-
-plugins:
-  - jekyll-feed
-  - jekyll-readme-index
-  - jemoji
+# Markdown settings
+kramdown:
+  input: GFM
+  hard_wrap: false

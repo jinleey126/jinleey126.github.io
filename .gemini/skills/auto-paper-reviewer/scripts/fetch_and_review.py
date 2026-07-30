@@ -19,7 +19,7 @@ TOP_CONFERENCES = ['NeurIPS', 'ACL', 'EMNLP', 'ICLR', 'ICML', 'CVPR', 'AAAI', 'I
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 REPO_ROOT = Path(__file__).resolve().parents[4]
-TARGET_DIR = REPO_ROOT / "_papers"
+TARGET_DIR = REPO_ROOT / "_pages" / "papers"
 TEMPLATE_PATH = REPO_ROOT / ".gemini/skills/auto-paper-reviewer/assets/templates/paper-review-template.md"
 
 # --- Functions ---

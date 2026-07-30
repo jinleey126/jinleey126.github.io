@@ -6,7 +6,7 @@ category: engineering
 subcategory: specific-field
 tags:
   - LLM
-layout: post
+layout: page
 mermaid: false
 ---
 

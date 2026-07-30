@@ -69,15 +69,15 @@ def main():
         sys.exit(1)
 
     if args.collection == "series":
-        dest_dir = os.path.join(BLOG_DIR, "_series", sanitize_slug(args.series))
+        dest_dir = os.path.join(BLOG_DIR, "_pages", "series", sanitize_slug(args.series))
     else:
-        dest_dir = os.path.join(BLOG_DIR, f"_{args.collection}")
+        dest_dir = os.path.join(BLOG_DIR, "_pages", args.collection)
     os.makedirs(dest_dir, exist_ok=True)
     dest_path = os.path.join(dest_dir, post_filename)
     
     # Image assets destination
-    # We copy local images to assets/images/study/<slug>/
-    assets_rel_dir = os.path.join("assets", "images", args.collection, slug)
+    # We copy local images to assets/img/<collection>/<slug>/
+    assets_rel_dir = os.path.join("assets", "img", args.collection, slug)
     assets_dest_dir = os.path.join(BLOG_DIR, assets_rel_dir)
     
     source_dir = os.path.dirname(source_path)
@@ -112,7 +112,7 @@ def main():
             shutil.copy2(abs_img_path, dest_img_path)
             
             # Rewrite path to Jekyll liquid absolute path
-            # We use {{ site.baseurl }}/assets/images/study/<slug>/<img_filename>
+            # We use {{ site.baseurl }}/assets/img/<collection>/<slug>/<img_filename>
             new_path = f"{{{{ site.baseurl }}}}/{assets_rel_dir}/{img_filename_sanitized}"
             return f"![{alt_text}]({new_path})"
         else:
