@@ -25,7 +25,7 @@ toc: true
 
 현재 AI는 서로 다른 두 계보인 **Agent**와 **Ontology**에서 발전했다.
 
-![alt text](image-1.png)
+![Agent와 Ontology의 두 계보](/assets/img/posts/h-ontology/image-1.png)
 
 * **Agent**: Probabilistic system
   - LLM은 학습된 패턴을 바탕으로 가장 그럴듯한(probabilistic) 결과물을 생성한다.
@@ -38,7 +38,7 @@ toc: true
 
 ## 2. The Convergence: Neurosymbolic AI
 
-![alt text](image.png)
+![Neurosymbolic AI 구조](/assets/img/posts/h-ontology/image.png)
 
 발표자는 Agent와 Ontology를 결합하여 확률 모델에 안전장치를 두는 방식을 강조한다.
 
@@ -53,7 +53,7 @@ toc: true
 
 ## 3. Ontology
 
-![alt text](image-2.png)
+![Ontology의 구성 요소](/assets/img/posts/h-ontology/image-2.png)
 
 스키마가 데이터의 형태를 정의한다면, 온톨로지(ontology, data as graphs)는 그 데이터가 도메인 안에서 무엇을 의미하며 어떤 관계가 논리적으로 가능한지까지 표현한다.
 
@@ -67,7 +67,7 @@ toc: true
 
 즉, 일반적인 이해, 계획 및 설계 등은 LLM에게 맡기고 안전, 데이터 무결성과 같은 영역만 형식화해서 온톨로지를 거대한 지식 체계가 아닌 작고 강한 가드레일로 사용한다.
 
-![alt text](image-3.png)
+![Ontology 구축 방식](/assets/img/posts/h-ontology/image-3.png)
 
 * **Top-down**: 도메인 전문가가 업무 개념과 규칙을 직접 정의
 * **Bottom-up**: 기존 문서와 데이터에서 개념과 관계를 추출
@@ -76,7 +76,7 @@ toc: true
 
 이미 특정 산업이나 업무 영역에서 표준 분류 체계나 어휘가 존재한다면 이를 재사용하는 것이 좋다.
 
-![alt text](image-4.png)
+![기존 분류 체계 재사용](/assets/img/posts/h-ontology/image-4.png)
 
 * 시스템 간 의미가 일치하여 데이터 통합이 쉬워진다.
 * 이미 검증된 관계와 분류를 활용할 수 있어 개념을 반복해서 정의할 필요가 없다.
@@ -84,7 +84,7 @@ toc: true
 
 ### 3.2 온톨로지를 표현하는 기술: RDFS, OWL
 
-![alt text](image-5.png)
+![RDFS와 OWL의 추론 및 제약](/assets/img/posts/h-ontology/image-5.png)
 
 RDFS와 OWL을 사용하면 단순히 정보를 저장하는 것을 넘어 타입과 관계를 추론하고 제약을 표현할 수 있다.
 
@@ -98,7 +98,7 @@ RDFS와 OWL을 사용하면 단순히 정보를 저장하는 것을 넘어 타�
 
 ### 4.1 LOOP
 
-![alt text](image-6.png)
+![Agent의 인식 판단 행동 루프](/assets/img/posts/h-ontology/image-6.png)
 
 일반적인 에이전트는 `[인식 → 판단 → 행동 → 결과 관찰 → 다시 판단]`의 루프를 반복한다.
 
@@ -139,7 +139,7 @@ while True:
 
 위 Claude 도구 사용 루프에서 `run_tool(call)`은 모델이 도구 호출을 생성하면 바로 실제 작업을 실행한다. 따라서 실행 전후에 두 개의 검증 지점을 둔다.
 
-![alt text](image-7.png)
+![Claude Agent 도구 사용 루프의 검증 지점](/assets/img/posts/h-ontology/image-7.png)
 
 * **GATE 1 (Pydantic)**: [**데이터의 모양**] 도구가 실행되기 전 호출 구조 검사
   * 필드 존재 여부
@@ -155,13 +155,13 @@ while True:
   * 상태 전이가 허용되는가
   * 결과가 현재 상태와 모순되지 않는가
 
-![alt text](image-8.png)
+![Pydantic과 Ontology 검증 계층](/assets/img/posts/h-ontology/image-8.png)
 
 Pydantic은 입력의 타입과 형태가 올바른지 확인하지만, 그 행동이 비즈니스 규칙상 허용되는지까지는 판단하지 못한다. 온톨로지는 현재 상태와 객체 간 관계를 기준으로 이 의미적 일관성을 검증한다.
 
 ## 5. Summary
 
-![alt text](image-9.png)
+![Ontology로 검출할 수 있는 오류](/assets/img/posts/h-ontology/image-9.png)
 
 이 발표는 모든 지식을 온톨로지로 옮기자는 이야기가 아니다. 핵심은 **확률적 에이전트가 반드시 지켜야 할 좁고 중요한 규칙을 모델 외부에 명시하자**는 것이다.
 
