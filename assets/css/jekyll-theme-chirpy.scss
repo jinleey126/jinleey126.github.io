@@ -36,3 +36,14 @@ blockquote,
   font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
     "Pretendard", "Noto Sans KR", "Segoe UI", sans-serif;
 }
+
+/* Keep each top-level post section visually separated without manual <br> tags. */
+article .content > h2 {
+  margin-top: 3.75rem;
+}
+
+@media (max-width: 576px) {
+  article .content > h2 {
+    margin-top: 3rem;
+  }
+}

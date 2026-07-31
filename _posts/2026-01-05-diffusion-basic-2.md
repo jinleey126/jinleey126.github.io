@@ -1,6 +1,6 @@
 ---
 title: "Diffusion 모델 학습을 위한 기대값, Likelihood와 KL Divergence"
-description: "Diffusion 학습 목적함수를 이해하기 위해 필요한 기대값, maximum likelihood, negative log-likelihood와 KL divergence를 정리한다."
+description: "Diffusion 학습 목적함수의 확률론적 기초: 기대값 · Likelihood · KL Divergence"
 date: 2026-01-05 09:00:00 +0900
 categories:
   - Paper Reviews

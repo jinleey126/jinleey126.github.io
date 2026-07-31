@@ -1,6 +1,6 @@
 ---
 title: "PAIChecker: Uncovering and Checking PR-Issue Misalignment in SWE-Bench-Like Benchmarks"
-description: "SWE-bench 계열 벤치마크의 PR-Issue 불일치 문제를 5개 패턴 및 11개 시나리오로 체계화하고, 3단계 multi-agent 기반 검증을 통해 탐지 정확도를 대폭 향상시킨 PAIChecker 제안"
+description: "PAIChecker 논문 리뷰: PR-Issue Misalignment · Multi-Agent 검증 · SWE-bench"
 date: 2026-03-30 09:00:00 +0900
 categories:
   - Paper Reviews

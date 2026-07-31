@@ -1,6 +1,6 @@
 ---
 title: "Diffusion의 Markov Chain과 Forward·Reverse Process"
-description: "DDPM의 Markov property, noise schedule과 alpha notation을 바탕으로 forward process와 학습 가능한 reverse process를 정리한다."
+description: "DDPM 확산 과정의 핵심 구조: Markov Chain · Noise Schedule · Forward·Reverse Process"
 date: 2026-01-09 09:00:00 +0900
 categories:
   - Paper Reviews

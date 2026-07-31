@@ -1,6 +1,6 @@
 ---
 title: "Diffusion U-Net의 Residual Block, Timestep Embedding과 Attention"
-description: "Diffusion 모델의 noise predictor로 U-Net을 사용하는 이유와 residual block, timestep embedding, attention의 역할을 정리한다."
+description: "Diffusion Noise Predictor 구조: U-Net · Residual Block · Timestep Embedding · Attention"
 date: 2026-01-12 09:00:00 +0900
 categories:
   - Paper Reviews

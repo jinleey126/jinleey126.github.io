@@ -1,6 +1,6 @@
 ---
 title: "Diffusion 모델 학습을 위한 Latent Variable과 ELBO 기초"
-description: "Diffusion에서 noisy trajectory가 latent variable로 해석되는 이유와 직접 likelihood 대신 ELBO를 최적화하는 과정을 정리한다."
+description: "Diffusion 변분 추론 기초: Latent Variable · Likelihood · ELBO"
 date: 2026-01-07 09:00:00 +0900
 categories:
   - Paper Reviews
